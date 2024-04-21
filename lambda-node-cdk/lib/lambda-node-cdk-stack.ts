@@ -29,6 +29,6 @@ const policy = new PolicyStatement({
 
   resources: [table.tableArn],
 });
-lambdaFuntion.addToRolePolicy(policy);
+//lambdaFuntion.addToRolePolicy(policy);
   }
 }
