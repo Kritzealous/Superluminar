@@ -24,8 +24,8 @@ export class LambdaNodeCdkStack extends Stack {
 
     // Add DynamoDB permissions to the Lambda function
 const policy = new PolicyStatement({
-  actions: ["dynamodb:GetItem", "dynamodb:PutItem", "dynamodb:UpdateItem", "dynamodb:DeleteItem"],
-  //actions: ["dynamodb:GetItem"],
+  //actions: ["dynamodb:GetItem", "dynamodb:Query", "dynamodb:Scan"],
+  actions: ["dynamodb:GetItem","dynamodb:PutItem"],
 
   resources: [table.tableArn],
 });
